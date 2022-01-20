@@ -3,7 +3,7 @@ plugins {
     kotlin("kapt")
 }
 
-group = "com.myapp"
+group = "com.eton"
 version = "1.0.0"
 
 repositories {

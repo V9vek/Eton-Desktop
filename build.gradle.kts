@@ -6,10 +6,10 @@ plugins {
     val kotlinVersion = "1.5.31"
     kotlin("jvm") version kotlinVersion
     kotlin("kapt") version kotlinVersion
-    id("org.jetbrains.compose") version "1.0.0-beta1"
+    id("org.jetbrains.compose") version "1.0.0-beta5"
 }
 
-group = "com.myapp"
+group = "com.eton"
 version = "1.0.0"
 
 repositories {
@@ -27,6 +27,12 @@ dependencies {
 
     // Module dependencies
     implementation(project(":data"))
+
+    // Material Icons extended
+    implementation("org.jetbrains.compose.material:material-icons-extended-desktop:1.0.0-beta1")
+
+    // Accompanist: Flow Row
+    // implementation("com.google.accompanist:accompanist-flowlayout:0.22.0-rc")
 
     // Dagger : A fast dependency injector for Android and Java.
     kapt("com.google.dagger:dagger-compiler:$daggerVersion")
@@ -73,10 +79,10 @@ tasks.withType<KotlinCompile>() {
 
 compose.desktop {
     application {
-        mainClass = "com.myapp.AppKt"
+        mainClass = "com.eton.AppKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "myapp"
+            packageName = "eton"
             packageVersion = "1.0.0"
 
             val iconsRoot = project.file("src/main/resources/drawables")
