@@ -4,6 +4,9 @@
 
 ### ✨ Demo
 
+https://user-images.githubusercontent.com/40730402/150338329-08f10ad5-beb8-409d-b607-c3fb305f2d0f.mp4
+
+
 ## What's included?
 
 - Architecture (MVVM) with Android-ish structure (SingleActivity)
