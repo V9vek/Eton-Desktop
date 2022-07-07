@@ -5,5 +5,5 @@ pluginManagement {
     }
 
 }
-rootProject.name = "compose-desktop-template"
+rootProject.name = "eton"
 include("data")
