@@ -3,10 +3,10 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val kotlinVersion = "1.5.31"
+    val kotlinVersion = "1.6.10"
     kotlin("jvm") version kotlinVersion
     kotlin("kapt") version kotlinVersion
-    id("org.jetbrains.compose") version "1.0.0-beta5"
+    id("org.jetbrains.compose") version "1.1.1"
 }
 
 group = "com.eton"
@@ -29,7 +29,7 @@ dependencies {
     implementation(project(":data"))
 
     // Material Icons extended
-    implementation("org.jetbrains.compose.material:material-icons-extended-desktop:1.0.0-beta1")
+    implementation("org.jetbrains.compose.material:material-icons-extended-desktop:1.1.1")
 
     // Accompanist: Flow Row
     // implementation("com.google.accompanist:accompanist-flowlayout:0.22.0-rc")
